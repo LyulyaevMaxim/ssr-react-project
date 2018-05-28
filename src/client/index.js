@@ -22,9 +22,7 @@ const render = Component => {
 render(App);
 
 if (module.hot && process.env.NODE_ENV === 'development') {
-    module.hot.accept('../shared/App', () => {
-        const App = require('../shared/App').default;
-
-        render(App);
-    });
+    module.hot.accept('../shared/App', () =>
+        render(require('../shared/App').default)
+    );
 }

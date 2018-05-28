@@ -1,5 +1,4 @@
-import { HomePage } from './components/AsyncComponents';
-import AboutPage from './components/About';
+import { HomePage, AboutPage } from './components/AsyncComponents';
 
 const routes = [
     {
